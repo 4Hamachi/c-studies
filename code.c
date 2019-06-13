@@ -11,11 +11,10 @@ int main() {
 
     printf("digite dois numero: ");
     scanf("%d%f",&nro,&f);
-    printf("numeros: %d e %f\n",nro,f);
+    printf("numeros: %d e %.0f\n",nro,f);
     
     
     return 0;
-
 
 
 }
