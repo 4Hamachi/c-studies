@@ -43,7 +43,7 @@ int main(){
         break;
 
     case 'u':
-        printf("essa letra eh vogal  %c\n", letra);
+        printf("essa letra eh vogal   %c\n", letra);
         break;
 
     case 'U':
@@ -51,7 +51,7 @@ int main(){
         break;    
 
     default:
-        printf("essa letra e consoante\n");
+        printf("essa letra e consoante %c\n", letra);
         break;
     }
 
