@@ -1,17 +1,48 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 int main(){
-    int nro;
-     printf("digite sua conta ");
-    scanf("%d",&nro); 
-    switch (nro){
-    case '+': printf ("soma.\n" ); break;
-    case '-': printf ("subitração.\n" ); break;
-    case '/': printf ("divisão.\n" ); break;
-    case '*': printf ("multiplicação.\n" ); break;
-    default : printf ("isso nao e uma conta matematica"); 
+
+    char   operacao;
+    double numero1;
+    double numero2;
+    double resultado;
+
+    printf("digite um numero: ");
+    scanf("%lf",&numero1);
+    printf("digite mais um numero: ");
+    scanf("%lf",&numero2);
+    getchar();
+    printf("escolha sua operaçao: ");
+    scanf("%c",&operacao);
+
+    switch (operacao)
+    {
+    case '+':
+        resultado = numero1 + numero2;
+        
+        break;
+
+    case '-':
+        resultado = numero1 - numero2;
+        break;
+
+    case '/':
+        resultado = numero1 / numero2;
+        break;
+
+    case '*':
+        resultado = numero1 * numero2;
+        break;            
+    
+    default:
+        printf("operaçao invalida\n");
+        break;
     }
-    
-    
+
+    printf("%.2lf\n",resultado);
+
     return 0;
+    
 }
+    
+    
