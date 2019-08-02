@@ -12,7 +12,7 @@ int main(){
     while(a <=  b)
     {
         a = a + 1;
-        //if(a == 5)
+        if(a == 5)
             continue;
             printf("%d\n",a);
 
